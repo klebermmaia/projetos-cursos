@@ -80,3 +80,18 @@ body{
   color: #0095f6;
   font-weight: bold;
 }
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 52px;
+}
+footer div{
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+footer div a, footer div span{
+  color: #8e8e9f;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
