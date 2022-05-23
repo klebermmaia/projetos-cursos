@@ -14,6 +14,8 @@ import {
 const colorGitHub = '#010409';
 const colorFontGitHub = '#c9d1d9';
 const colorFontDarkGitHub = '#4f565e';
+const colorBall = '#006d31';
+const colorBallDio = '#37d552';
 const imgProfileGitHub = 'https://avatars.githubusercontent.com/u/42123079?v=4';
 const urlMyProfile = 'https://github.com/klebermmaia';
 const App = ()=> {
@@ -32,12 +34,104 @@ const App = ()=> {
         <Image style={style.avatar} source={{uri:imgProfileGitHub}}/>
         <Text accessibilityLabel="Nome: Kleber maia" style={[style.defaultText, style.name]}>Kleber Maia</Text>
         <Text accessibilityLabel="Nickname: KleberMaia" style={[style.defaultText, style.nikename]}>KleberMaia</Text>
-        <Text style={[style.defaultText, style.description]}>Descrição: blablablablablabla blablablabla blablablablablablablablablablablabla blablablabla blablablablablabla</Text>
+        <Text style={[style.defaultText, style.description]}>Dev web: HTML | CSS | JS | UI/UX Designer</Text>
       <Pressable onPress={handPressGoToGithub}>
         <View style={[style.button]}>
           <Text style={[style.defaultText, style.textButton]}>Open in github</Text>
         </View>
       </Pressable>
+      <View style={style.atividadeGithub}>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+        </View>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+        </View>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+        </View>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+        </View>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball, style.ballDio]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+        </View>
+        <View style={style.line}>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+            <View style={[style.ball]}/>
+        </View>
+      </View>
       </View>
     </SafeAreaView>
   );
@@ -45,6 +139,22 @@ const App = ()=> {
 export default App;
 
 const style = StyleSheet.create({
+  ballDio:{
+    backgroundColor: colorBallDio,
+  },
+  ball:{
+    backgroundColor: colorBall,
+    width: 11,
+    height: 11,
+    borderRadius: 100,
+    margin: 0.5,
+  },
+  line:{
+    flexDirection: 'row',
+  },
+  atividadeGithub:{
+    marginTop: 20,
+  },
   container: {
     backgroundColor: colorGitHub,
     flex: 1,
